@@ -1,10 +1,7 @@
-<h1>Welcome</h1>
+Loop through every post 
+And show me that post.
 
-<p>
-	This is the landing page for Crumblr, Tyler's blog made using Ruby on Rails
-
-</p>
-
-<p>
-	This page is just a placeholder. Later on we'll replace it with posts in our blog
-</p>
+<% @posts.each do |post| %>
+	<%= render 'posts/post', post: post %>
+	<br><br><br><br>
+<% end %>
